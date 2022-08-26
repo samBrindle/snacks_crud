@@ -4,23 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Snacks - CRUD</title>
 </head>
-<body>
+<body class="bg-slate-900 font-mono space-y-8">
 <header>
-    <nav>
-        <a href="{% url 'snack_list' %}">Snack List</a>
+    <nav class="text-center text-blue-600">
+        <a class="mr-8 bg-gray-200 px-2 rounded-lg" href="{% url 'snack_list' %}">Snack List</a>
 {#        <a href="{% url 'snack_detail' %}">Snack Details</a>#}
-        <a href="{% url 'snack_create' %}">Create Snack</a>
+        <a class="ml-8 bg-gray-200 px-2 rounded-lg" href="{% url 'snack_create' %}">Create Snack</a>
 {#        <a href="{% url 'snack_update' %}">Update Snack</a>#}
 {#        <a href="{% url 'snack_delete' %}">Delete Snack</a>#}
 
-
-
     </nav>
 </header>
-<main>
+<main class="pl-8 border-2 border-blue-600 mx-20 rounded-lg bg-gray-600">
     {% block content %}
         Don't look at me!
     {% endblock content %}

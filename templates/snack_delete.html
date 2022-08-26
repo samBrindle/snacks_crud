@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>Delete Snack</h1>
+    <h1 class="pb-4 text-white">Delete Snack</h1>
 
     <form method="POST">
     {% csrf_token %}
-    <p>Do you really want to delete " {{ snack.name }}</p>
-        <input type="submit" value="OK">
+    <p class="pb-2 text-white">Do you really want to delete {{ snack.name }}</p>
+        <input type="submit" value="OK" class="mr-8 text-white px-2 rounded-lg bg-red-500">
     </form>
 
 {% endblock content %}
